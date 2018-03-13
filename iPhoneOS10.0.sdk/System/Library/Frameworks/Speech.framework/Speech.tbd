@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: C23D3331-45F8-36F4-9C92-BB379449F570', 'armv7s: 00BE7E49-57C0-3E65-A307-17AE5F685471', 
+                   'arm64: 42BCB0E3-2233-30B5-A0C1-C005AD6CAFC4' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/Speech.framework/Speech
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SFIsTV, _SpeechVersionNumber, _SpeechVersionString ]
+    objc-classes:    [ _SFSpeechAudioBufferRecognitionRequest, _SFSpeechRecognitionRequest, 
+                       _SFSpeechRecognitionResult, _SFSpeechRecognitionTask, _SFSpeechRecognizer, 
+                       _SFSpeechRecordingRecognitionRequest, _SFSpeechURLRecognitionRequest, 
+                       _SFTranscription, _SFTranscriptionSegment, __SFSearchRequest, 
+                       __SFSearchResult, __SFSpeechRecognitionBlockTask, __SFSpeechRecognitionDelegateTask ]
+...

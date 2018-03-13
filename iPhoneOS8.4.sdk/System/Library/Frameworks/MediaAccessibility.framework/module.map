@@ -1,0 +1,9 @@
+framework module MediaAccessibility [extern_c] [system] {
+  umbrella header "MediaAccessibility.h"
+
+  export *
+  module * { export * }
+
+  exclude header "MACaptionAppearanceDeprecated.h"
+}
+

@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 59D71ABA-8CBB-317F-94F6-EDA576E3AC78', 'armv7s: 4D525814-28E9-37E2-A668-D9D534F179A3', 
+                   'arm64: E87F5593-DBF8-3DC8-ACFB-4D306711EE81' ]
+platform:        ios
+install-name:    /System/Library/TextInput/TextInput_fr.bundle/TextInput_fr
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __ZN2KB18CandidateFilter_fr20do_filter_candidatesERNSt3__16vectorINS_9CandidateENS1_9allocatorIS3_EEEERKS3_P10__CFString, 
+                       __ZTVN2KB18CandidateFilter_frE ]
+    objc-classes:    [ _TIKeyboardFeatureSpecialization_fr ]
+...

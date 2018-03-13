@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: B90BFB79-BE4E-373C-A168-0265E4F6E9D2', 'armv7s: 70C15C5B-B7E5-3702-9F08-20B5CB6AF192', 
+                   'arm64: D287AE88-DEA1-38DE-8AD1-6BAD5A0A5581' ]
+platform:        ios
+install-name:    /usr/lib/libdns_services.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DNSXEnableProxy, _DNSXRefDeAlloc ]
+...

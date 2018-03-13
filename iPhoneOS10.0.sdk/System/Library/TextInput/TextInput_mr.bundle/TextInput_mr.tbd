@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 094315B0-4113-3A72-8CBB-84299693260C', 'armv7s: 0A34CEAD-092D-33EB-8C8F-308D0ACC0D0E', 
+                   'arm64: EE82805B-96EF-32F0-8D7C-DF3E84B48A9F' ]
+platform:        ios
+install-name:    /System/Library/TextInput/TextInput_mr.bundle/TextInput_mr
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __ZNK17TIInputManager_mr30create_custom_candidate_filterEN2KB10LookupTypeE, 
+                       __ZTV17TIInputManager_mr ]
+    objc-classes:    [ _TIKeyboardInputManager_mr ]
+...

@@ -1,0 +1,6 @@
+framework module CoreTelephony [extern_c] [system] {
+  export *
+  umbrella "Headers"
+  module * { export * }
+}
+

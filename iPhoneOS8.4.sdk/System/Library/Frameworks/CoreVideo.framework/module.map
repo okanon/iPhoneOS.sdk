@@ -1,0 +1,14 @@
+framework module CoreVideo [extern_c] [system] {
+  umbrella header "CoreVideo.h"
+
+  export *
+  module * { 
+    export *
+  }
+
+  explicit module CVHostTime { 
+    header "CVHostTime.h" 
+    export *
+  }
+}
+

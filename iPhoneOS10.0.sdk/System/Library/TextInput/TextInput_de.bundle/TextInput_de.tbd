@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 2C9119FD-97E7-34B1-AF1C-E7D8EE99672A', 'armv7s: 7BADE29B-BE3C-32D1-84BD-CB962C077D48', 
+                   'arm64: 01876248-EB6D-3EE8-9C83-6B6A5B1D6042' ]
+platform:        ios
+install-name:    /System/Library/TextInput/TextInput_de.bundle/TextInput_de
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __ZN2KB29InputManagerSpecialization_deC1EPK10__CFLocale, __ZN2KB29InputManagerSpecialization_deC2EPK10__CFLocale, 
+                       __ZNK2KB29InputManagerSpecialization_de10has_umlautERKNS_6StringE, 
+                       __ZNK2KB29InputManagerSpecialization_de21has_decomposed_umlautERKNS_6StringE, 
+                       __ZNK2KB29InputManagerSpecialization_de25get_does_need_spell_checkERKNS_6StringE, 
+                       __ZNK2KB29InputManagerSpecialization_de27do_apply_custom_conversionsERNS_19CandidateCollectionE, 
+                       __ZNK2KB29InputManagerSpecialization_de31do_filter_spellcheck_candidatesERNS_19CandidateCollectionERKNS_6StringE, 
+                       __ZNK2KB29InputManagerSpecialization_de35get_period_ends_sentence_after_wordERKNS_6StringE, 
+                       __ZNK2KB29InputManagerSpecialization_de42get_should_correct_explicitly_shifted_wordEv, 
+                       __ZTVN2KB29InputManagerSpecialization_deE ]
+    objc-classes:    [ _TIKeyboardFeatureSpecialization_de ]
+...

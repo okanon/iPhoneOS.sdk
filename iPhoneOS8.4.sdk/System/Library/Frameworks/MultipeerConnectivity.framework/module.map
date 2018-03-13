@@ -1,0 +1,7 @@
+framework module MultipeerConnectivity [extern_c] [system] {
+  umbrella "Headers"
+     
+  export *
+  module * { export * }
+}
+

@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: BA7C55A4-8FE3-368F-9874-A38995E6E281', 'armv7s: 93DD19BA-5D34-387A-A14E-D2E4B4851418', 
+                   'arm64: CB65E44F-AE8D-39D5-950C-8195FE74B98E' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/AVKit.framework/AVKit
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AVKitErrorDomain ]
+    objc-classes:    [ _AVChapter, _AVPictureInPictureController, _AVPlayerController, 
+                       _AVPlayerViewController ]
+...

@@ -1,0 +1,18 @@
+RPUTIMessage() {
+# usage: RPUTIMessage line type message
+# Echo the message to stdout as the given type of message and continue
+    echo "${SDK_DIR}/Developer/usr/bin/RunPlatformUnitTests:${1}: ${2}: ${3}"
+}
+
+## The logic to run unit test on a device is done inside of Xcode's RemoteIPhone plugin.
+## It keys off of a bundle "<any>.octest" inside the top of the .app bundle.
+## Build a "dependent" unit test bundle (ie. the "code under test" all lives in Application itself, the unittest.octest bundle only has the test harness code).
+## For background, see:  http://developer.apple.com/documentation/developertools/Conceptual/UnitTesting/UnitTesting.html
+
+## From an existing iPhone application project (ie. one that you can download to the device and run already)
+## 1) Project -> New Target -> Cocoa Touch -> Unit Test Bundle (name it whatever you like)
+## 2) File -> New File -> Cocoa Touch Classes -> Unit Test Case class
+## 3) Open the "Products" item under "Groups & Files"
+## 4) Drag the "<name>.octest" item onto your Application (makes the Bundle build as part of building your Application).
+## 5) Again, Drag the "<name>.octest" item onto your Application's "Copy Bundle Resources" build phase (Unit Test bundle is sent to the device with the Application)
+## 6) "Build & Go" the Application -- runs All Unit Tests and exits.  Debugging of Unit Test is the same as debugging an Application

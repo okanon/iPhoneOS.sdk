@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: 44207CE4-7DEF-35A1-8394-2876634618B2' ]
+platform:        ios
+install-name:    /usr/lib/libAHTRestore.dylib
+current-version: 1001.1
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AHTRestoreListDevices, _AHTRestoreUpdateDevice, _AHTRestoreUpdateDeviceWithOverrides ]
+    objc-classes:    [ _AHTLoader ]
+...

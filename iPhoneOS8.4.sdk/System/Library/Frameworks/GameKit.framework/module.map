@@ -1,0 +1,19 @@
+framework module GameKit [extern_c] [system] {
+  umbrella header "GameKit.h"
+
+  export *
+  module * { export * }
+
+
+
+
+
+
+
+  explicit module GKLeaderboardSet {
+    header "GKLeaderboardSet.h"
+    export *
+  }
+
+}
+

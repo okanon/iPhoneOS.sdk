@@ -1,0 +1,54 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: 92789ECD-2604-3A8A-B23D-57E56804C283' ]
+platform:        ios
+install-name:    /usr/lib/libBKDM2.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _BKDMInitialize, _BKDMTerminate, _DERDecodeItem, _DERDecodeItemPartialBuffer, 
+                       _DERDecodeItemPartialBufferGetLength, _DERDecodeSeqContentInit, 
+                       _DERDecodeSeqInit, _DERDecodeSeqNext, _DERImg4CompressionItemSpecs, 
+                       _DERImg4Decode, _DERImg4DecodeContentFindItemWithTag, _DERImg4DecodeFindInSequence, 
+                       _DERImg4DecodeFindProperty, _DERImg4DecodeManifest, _DERImg4DecodeParseManifestProperties, 
+                       _DERImg4DecodePayload, _DERImg4DecodeProperty, _DERImg4DecodeRestoreInfo, 
+                       _DERImg4DecodeTagCompare, _DERImg4ItemSpecs, _DERImg4ManifestItemSpecs, 
+                       _DERImg4PayloadItemSpecs, _DERImg4RestoreInfoItemSpecs, _DERNumImg4CompressionItemSpecs, 
+                       _DERNumImg4ItemSpecs, _DERNumImg4ManifestItemSpecs, _DERNumImg4PayloadItemSpecs, 
+                       _DERNumImg4RestoreInfoItemSpecs, _DERParseBitString, _DERParseBoolean, 
+                       _DERParseBooleanWithDefault, _DERParseInteger, _DERParseInteger64, 
+                       _DERParseSequence, _DERParseSequenceContent, _Img4DecodeCopyManifestDigest, 
+                       _Img4DecodeCopyManifestHashWithCallback, _Img4DecodeCopyPayloadDigest, 
+                       _Img4DecodeCopyPayloadHashWithCallback, _Img4DecodeEvaluateCertificateProperties, 
+                       _Img4DecodeEvaluateDictionaryProperties, _Img4DecodeEvaluateManifestProperties, 
+                       _Img4DecodeEvaluateObjectProperties, _Img4DecodeEvaluateTrustWithCallbacks, 
+                       _Img4DecodeGetBooleanFromSection, _Img4DecodeGetDataFromSection, 
+                       _Img4DecodeGetInteger64FromSection, _Img4DecodeGetIntegerFromSection, 
+                       _Img4DecodeGetManifest, _Img4DecodeGetObjectProperty, _Img4DecodeGetObjectPropertyBoolean, 
+                       _Img4DecodeGetObjectPropertyData, _Img4DecodeGetObjectPropertyInteger, 
+                       _Img4DecodeGetObjectPropertyInteger64, _Img4DecodeGetObjectPropertyString, 
+                       _Img4DecodeGetPayload, _Img4DecodeGetPayloadCompressionInfo, 
+                       _Img4DecodeGetPayloadKeybag, _Img4DecodeGetPayloadType, _Img4DecodeGetPayloadVersion, 
+                       _Img4DecodeGetPropertyBoolean, _Img4DecodeGetPropertyData, 
+                       _Img4DecodeGetPropertyFromSection, _Img4DecodeGetPropertyInteger, 
+                       _Img4DecodeGetPropertyInteger64, _Img4DecodeGetRestoreInfoBoolean, 
+                       _Img4DecodeGetRestoreInfoData, _Img4DecodeGetRestoreInfoInteger, 
+                       _Img4DecodeGetRestoreInfoInteger64, _Img4DecodeInit, _Img4DecodeInitManifest, 
+                       _Img4DecodeInitPayload, _Img4DecodeManifestExists, _Img4DecodeParseLengthFromBuffer, 
+                       _Img4DecodeParseLengthFromBufferWithTag, _Img4DecodePayloadCompressionInfoExists, 
+                       _Img4DecodePayloadExists, _Img4DecodePayloadKeybagExists, 
+                       _Img4DecodePerformTrustEvaluatation, _Img4DecodePerformTrustEvaluatationWithCallbacks, 
+                       _Img4DecodeRestoreInfoExists, _Img4DecodeSectionExists, _MCDMExtractMessageData, 
+                       _RETENTION_QUEUE_LABEL, ___osLog, ___osLogInternal, _addDirectoryEntrySize, 
+                       _biolog_cert_pem, _biolog_cert_pem_len, _getSensorSerialNumStringUT, 
+                       _kBioOpParamEnrollOptions, _kBioOpParamEnrollType, _kBioOpParamEnrollUserID, 
+                       _kBioOpParamFaceDetectContext, _kBioOpParamFaceDetectOptions, 
+                       _kBioOpParamMatchFilter, _kBioOpParamMatchOptions, _kBioOpParamMatchPreArm, 
+                       _kBioOpParamsMatchFilterHB, _kBioOpParamsMatchUnlockUserID, 
+                       _kCatacombCurrentDateKey, _kCatacombEnrollmentCountKey, _kCatacombIdentityListKey, 
+                       _kCatacombSecureDataKey, _kCatacombUserIDKey, _kCatacombUserUUIDKey, 
+                       _kCatacombVersionKey ]
+    objc-classes:    [ _BLHelper, _BioLog, _BiometricKitXPCServerPearl, _BiometricOperation, 
+                       _FaceDetectContext, _PearlCoreAnalytics ]
+...

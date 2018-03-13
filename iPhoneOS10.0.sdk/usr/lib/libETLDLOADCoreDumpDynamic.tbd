@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: F35A130D-CE0B-3888-BD63-5C2E3ED68143', 'armv7s: 90EF6F51-92AC-3F3F-8B7D-B018A4569966', 
+                   'arm64: 0B1F89FE-30FC-3D3E-902F-CBF135965D46' ]
+platform:        ios
+install-name:    /usr/lib/libETLDLOADCoreDumpDynamic.dylib
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ETLDLOADCoreDumpCaptureRecord, _ETLDLOADCoreDumpCaptureRecordFast ]
+...

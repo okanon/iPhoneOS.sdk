@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: AFF2E5CF-01A3-3165-BC7E-703D67DAF447', 'armv7s: 14CE2ED4-2E9C-3A23-A594-0677CEFF0F8A', 
+                   'arm64: 1A4127E0-2184-3195-B8EB-F090CBEED8E6' ]
+platform:        ios
+install-name:    /System/Library/CoreServices/Encodings/libArabicConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ ___CFStringEncodingGetArabicConverterDefinition ]
+...

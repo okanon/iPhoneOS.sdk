@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: B59231FA-6B5C-3A90-903A-F2C6F7F8F1FC', 'armv7s: AA462EEF-C786-3A92-BAED-C890BFA40519', 
+                   'arm64: 04E01B5B-073B-3226-A2A3-551E9DC74381' ]
+platform:        ios
+install-name:    /usr/lib/libPPM.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _clientNumberAlrt, _clientNumberBsbd, _clientNumberPlat, _clientNumberStck, 
+                       _clientNumberWifi, _gNotifyPort, _kPPMDriver ]
+    objc-classes:    [ _IOKitUserClientInterface, _PPMClient ]
+...

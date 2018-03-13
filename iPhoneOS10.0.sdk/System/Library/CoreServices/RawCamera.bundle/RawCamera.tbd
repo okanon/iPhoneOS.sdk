@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 10FA109D-6310-31CF-9992-BA4811C6111F', 'armv7s: A62F5963-9B9B-3600-A423-E100C979C4E3', 
+                   'arm64: B03AA426-0A5D-305B-8038-066BA13197A2' ]
+platform:        ios
+install-name:    /System/Library/CoreServices/RawCamera.bundle/RawCamera
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CreateListOfSupportedCamerasAndVersions, _GetRawPluginsInfo, 
+                       _RCCopyMethodsArrayForIdentifier, _RCCreateCIImageFromBufferAndProperties, 
+                       _RawCameraTP, _ReadMakerNoteProps ]
+...

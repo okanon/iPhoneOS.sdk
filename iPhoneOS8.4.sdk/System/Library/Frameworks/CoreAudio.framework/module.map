@@ -1,0 +1,9 @@
+framework module CoreAudio [extern_c] [system] {
+
+  umbrella header "CoreAudioTypes.h"  
+
+
+  export *
+  module * { export * }
+}
+

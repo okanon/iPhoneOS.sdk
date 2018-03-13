@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 3557B3F5-0F05-339A-9E76-C83D5DF3019E', 'armv7s: 654D3D34-181B-3034-9331-FF6ABE9B6CFE', 
+                   'arm64: B4E6517A-63F9-31B5-93E5-6B939CFEE28E' ]
+platform:        ios
+install-name:    /usr/lib/libETLDIAGLoggingDynamic.dylib
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s ]
+    weak-def-symbols: [ __ZTINSt3__113basic_filebufIcNS_11char_traitsIcEEEE, __ZTINSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTSNSt3__113basic_filebufIcNS_11char_traitsIcEEEE, __ZTSNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE ]
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __Z23ETLDIAGLoggingConfigureR20ETLDIAGLoggingParamsRNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE, 
+                       __Z24ETLDIAGLoggingCreateHashRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __Z25ETLDIAGLoggingUnconfigureR20ETLDIAGLoggingParamsRNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE, 
+                       __Z29ETLDIAGLoggingGetStringForKeymPPKcPv ]
+...

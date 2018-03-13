@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: CD854BE0-6CF0-31BB-8C23-2983884C04FC' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/BusinessChat.framework/BusinessChat
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _BCParameterNameBody, _BCParameterNameGroup, _BCParameterNameIntent ]
+    objc-classes:    [ BCApplePayManager, BCChatButton, BCMessage ]
+...

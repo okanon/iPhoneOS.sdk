@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 6AE7E3E1-9F67-3A46-8002-F98278F87A21', 'armv7s: B1F56B22-9465-3637-9F91-97689C1116C3', 
+                   'arm64: 2A603FD8-5A0A-3D7E-B0F8-D444FC3A853B' ]
+platform:        ios
+install-name:    /usr/lib/libETLDLFDynamic.dylib
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ETLDLFAddVersionReport, _ETLDLFConversionParametersInit, 
+                       _ETLDLFConvert, _ETLDLFConvertDebugData, _ETLDLFConvertExt, 
+                       _ETLDLFConverter, _ETLDLFParse ]
+...
