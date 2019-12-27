@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: C93E7BB6-6005-33C8-A5A5-ED21E9674330', 'arm64e: BC7E231F-77C9-36BC-BC7E-8D445D6D9C21' ]
+platform:        ios
+install-name:    '/usr/lib/libAppleHIDSWDFlash.dylib'
+current-version: 3100.37
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ _AppleHIDSWDFlash ]
+...

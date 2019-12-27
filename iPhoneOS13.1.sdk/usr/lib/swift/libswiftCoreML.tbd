@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: FDEA2D96-1482-380D-89DE-A4572E4E2336', 'arm64e: 6B50D55C-422D-33BA-A96C-905B9138F151' ]
+platform:        ios
+install-name:    '/usr/lib/swift/libswiftCoreML.dylib'
+current-version: 0
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ '_$sSR6CoreMLEySRyxGSo12MLMultiArrayCKcfC', '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzSd7ElementRtzlufC', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzSf7ElementRtzlufC', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzs17FixedWidthInteger7ElementRpzlufC', 
+                       '_$sSr6CoreMLEySryxGSo12MLMultiArrayCKcfC', '__swift_FORCE_LOAD_$_swiftCoreML' ]
+...

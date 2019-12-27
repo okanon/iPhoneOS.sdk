@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: 641C1A83-2344-35AE-B12D-71B71F7A5A08', 'arm64e: A9FF49A6-C17D-32A8-9D44-4E8415535DFD' ]
+platform:        ios
+install-name:    '/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore'
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ _ICCameraDeviceCanAcceptPTPCommands, _ICCameraDeviceCanDeleteAllFiles, 
+                       _ICCameraDeviceCanDeleteOneFile, _ICCameraDeviceCanReceiveFile, 
+                       _ICCameraDeviceCanSyncClock, _ICCameraDeviceCanTakePicture, 
+                       _ICCameraDeviceCanTakePictureUsingShutterReleaseOnCamera, 
+                       _ICCameraDeviceSupportsApplePTP, _ICCameraDeviceSupportsHEIF, 
+                       _ICCameraDeviceSupportsPLRUUID, _ICDeleteAfterSuccessfulDownload, 
+                       _ICDeleteCanceled, _ICDeleteErrorCanceled, _ICDeleteErrorDeviceMissing, 
+                       _ICDeleteErrorFileMissing, _ICDeleteErrorReadOnly, _ICDeleteFailed, 
+                       _ICDeleteSuccessful, _ICDeviceCanEjectOrDisconnect, _ICDownloadSidecarFiles, 
+                       _ICDownloadsDirectoryURL, _ICEnumerationChronologicalOrder, 
+                       _ICErrorDomain, _ICImageSourceShouldCache, _ICImageSourceThumbnailMaxPixelSize, 
+                       _ICLoggingDomain, _ICLoggingLevel, _ICMetadataBrevity, _ICMetadataBrevityEssential, 
+                       _ICOverwrite, _ICPreferencesDomain, _ICSaveAsFilename, _ICSavedAncillaryFiles, 
+                       _ICSavedFilename, _ICStatusNotificationKey, _ICTransportTypeExFAT, 
+                       _ICTransportTypeMassStorage, _ICTransportTypeTCPIP, _ICTransportTypeUSB, 
+                       ___ICLogDateString, ___ICLogTypeEnabled, ___ICOSLogCreate, 
+                       ___ICReadPrefs, __gICOSLog ]
+    objc-classes:    [ ICCameraDevice, ICCameraFile, ICCameraFolder, ICCameraItem, 
+                       ICDevice, ICDeviceBrowser ]
+...
