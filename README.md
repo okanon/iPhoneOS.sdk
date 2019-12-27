@@ -19,4 +19,4 @@
 
 
 ## Release
-iPhoneOS8.4 - 10.3 is in [release](https://github.com/okanon/iPhoneOS.sdk/releases/tag/v0.0.1)
+iPhoneOS8.4 - 10.3 is [here](https://github.com/okanon/iPhoneOS.sdk/releases/tag/v0.0.1)
